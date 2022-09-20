@@ -1,0 +1,42 @@
+#Overview
+In this guide, I'll explain how to set up Splinter Cell: Chaos Theory on the Steamdeck with original controls and walk you through how to apply the WidescreenFix for the game.
+##Prerequisites
+Required:
+- Splinter Cell: Chaos Theory
+- SteamDeck
+Optional:
+- External Keyboard
+- External Mouse
+##Instructions:
+1. Install Splinter Cell: Chaos Theory
+2. Navigate to the Game Library and select Installed
+3. Select Splinter Cell: Chaos Theory
+4. Navigate from the Play button to the controller icon and press A to enter the Controller Settings menu
+5. Navigate from View Layout to the Current Layout and press A to browse Community Layouts
+6. Tab over from Templates to Community Layouts
+7. Scroll down and locate SCFix SteamDeck from African Space Jesus and press A.
+8. Press B to exit the Controller Settings menu
+9. Click Play
+
+After this step, you can now play Splinter Cell: Chaos Theory without controller issues.
+However, if you want to apply the WidescreenFix to the game instead of playing at its default resolution, follow these steps:
+4. Continuing from Step 3 above, select the Gear icon
+5. Select Properties...
+6. In the Launch Options field, enter the following:
+WINEDLLOVERRIDES="D3D9,dinput8,msacm32,msvfw32=n,b" gamemoderun %command% -nointro
+7. Hold the power button until the Power menu appears
+8. Select Switch to Desktop
+9. In Desktop mode, open a browser and download the WidescreenFix by navigating to https://github.com/ThirteenAG/WidescreenFixesPack/releases/download/scct/SplinterCellChaosTheory.WidescreenFix.zip
+10. Extract the files to
+/home/deck/.local/share/Steam/steamapps/common/Splintercell Chaos Theory/System
+11. Click on the Folders app and navigate to
+/home/deck/.local/share/Steam/steamapps/common/Splintercell Chaos Theory/System/scripts
+12. Open SplinterCellChaosTheory.WidescreenFix.ini
+13. Change the ResX field from 0 to 1280
+14. Change the ResY field from 0 to 800
+15. Click Save
+16. Exit out of the ini file
+17. Minimize or close all windows
+18. Select Switch to Gaming Mode
+19. Follow Steps 2 and 3 again
+20. Click Play
